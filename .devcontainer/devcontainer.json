@@ -1,13 +1,16 @@
 {
   "name": "Class 7 Final Project",
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
-  "postCreateCommand": "python -m pip install -r requirements-notebook.txt && python -m ipykernel install --user --name class7 --display-name \"Class 7 Python 3.11\"",
+  "postCreateCommand": "bash scripts/install_dependencies.sh",
   "containerEnv": {
     "TF_NUM_INTRAOP_THREADS": "2",
     "TF_NUM_INTEROP_THREADS": "2",
     "OMP_NUM_THREADS": "2"
   },
-  "forwardPorts": [8000, 8501],
+  "forwardPorts": [
+    8000,
+    8501
+  ],
   "portsAttributes": {
     "8000": {
       "label": "FastAPI"
