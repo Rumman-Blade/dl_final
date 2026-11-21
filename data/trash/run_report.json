@@ -1,0 +1,5 @@
+{
+  "accuracy": 0.8390501319261213,
+  "macro_f1": 0.8094979134533601,
+  "training": "head-trained (stopped early)"
+}

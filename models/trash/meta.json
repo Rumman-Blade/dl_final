@@ -1,0 +1,28 @@
+{
+  "title": "Waste sorting (TrashNet)",
+  "classes": [
+    "cardboard",
+    "glass",
+    "metal",
+    "paper",
+    "plastic",
+    "trash"
+  ],
+  "classes_bn": [
+    "কার্ডবোর্ড",
+    "কাচ",
+    "ধাতু",
+    "কাগজ",
+    "প্লাস্টিক",
+    "অন্যান্য আবর্জনা"
+  ],
+  "image_size": 160,
+  "model_file": "trash_tl.keras",
+  "model_name": "MobileNetV2 head-trained (stopped early)",
+  "not_sure_threshold": 0.89,
+  "threshold_target_met_on_validation": true,
+  "gradcam_layer": "out_relu",
+  "gradcam_tolerance": 0.0001,
+  "test_looks": 1,
+  "training_note": "Existing full-data training interrupted for the live class; weights retained, no new fit call."
+}
